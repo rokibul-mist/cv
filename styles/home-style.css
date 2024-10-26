@@ -1,0 +1,50 @@
+
+.info{
+    border-radius: 10px;
+    flex-basis: 70%;
+    background-color: #f9f9f9;
+    width: 55%;
+    margin-right: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease forwards;
+}
+.info h1{
+    padding: 10px 20px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+} 
+.info p{
+    padding: 10px 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+.image{
+    border-radius: 10px;
+    width: 45%;
+}
+.image img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0px 0px 20px 0px;   ;
+}
+
+.gallary{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.gallary img{
+    text-align: center;
+    align-items: center;
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}

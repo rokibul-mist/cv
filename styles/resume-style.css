@@ -1,0 +1,24 @@
+h2{
+    text-align: center;
+    background: #eafff0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.card{
+
+    margin: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s;
+    display: flex;
+    animation: slidedown .5s ease forwards;
+}
+
+.card div{
+    flex-basis: 90%;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
