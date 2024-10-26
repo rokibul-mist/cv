@@ -1,115 +1,181 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
-    margin: 10px;
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.body2{
-    background-color: rgb(255, 255, 255);
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+  margin: 10px;
+}
+
+.body2 {
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav {
-    display: flex;
-    justify-content: center;
-    background-color: #2a2a72;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin-top: 10px;
-    height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: #2a2a72;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 60px;
 }
+
 .nav a {
-    color: rgb(255, 255, 255);
-    padding: 15px 25px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    overflow: hidden;
-    text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  overflow: hidden;
+  text-align: center;
 }
+
 .nav a:hover {
-    background-color: #009ffd;
+  background-color: #009ffd;
 }
 
-.container{
-    display: flex;
-    justify-items: center;
-    padding: 20px;
-    text-align: center;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
 }
-.button{
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #009FFD;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    text-decoration: solid;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+.info {
+  flex: 1;
+  padding: 20px;
 }
-.button:hover{
-    background-color: #007bff;
+
+
+.button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #009FFD;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: solid;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.button:hover {
+  background-color: #007bff;
+}
+
 footer {
-    background-color: #2a2a72;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
+  background-color: #2a2a72;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
 }
 
-.social-icons{
-    position: fixed;
-    top: 20%;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 4px;
-}
-.social-icons img{
-    display: block;
-    width: 30px;
-    margin-top: 10px;
+.social-icons {
+  position: fixed;
+  top: 20%;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 4px;
 }
 
+.social-icons img {
+  display: block;
+  width: 30px;
+  margin-top: 10px;
+}
 
-  /* Apply the animation to the element */
-  @keyframes slideIn {
-    from {
+/* Keyframe Animations */
+@keyframes slideIn {
+  from {
       transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0); 
-    }
   }
-  @keyframes slidedown {
-    from {
+  to {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slidedown {
+  from {
       color: transparent;
       transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0); 
-    }
   }
-@media (max-width: 800px) {
-   .nav a {
-        font-size: .6rem;
-    }
+  to {
+      transform: translateY(0);
+  }
 }
 
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 800px) {
+  .nav a {
+      font-size: 0.8rem;
+      padding: 10px 20px;
+  }
+  .container {
+      flex-direction: column;
+  }
+
+  .social-icons {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .nav {
+      flex-direction: column;
+      height: auto;
+  }
+  .nav a {
+      font-size: 0.7rem;
+      padding: 10px;
+  }
+  .body2 {
+      margin: 5px;
+      padding: 10px;
+  }
+  .container {
+      padding: 10px;
+  }
+  .button {
+      padding: 8px 15px;
+      font-size: 1rem;
+  }
+  .social-icons {
+      position: relative;
+      top: auto;
+      right: auto;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+  }
+  .social-icons img {
+      width: 25px;
+      margin: 5px;
+  }
+}

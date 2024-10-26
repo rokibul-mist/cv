@@ -22,3 +22,51 @@ img{
     width: 100px;
     height: 100px;
 }
+
+/* Responsive Styling */
+
+/* Tablet */
+@media (max-width: 800px) {
+    h2 {
+        font-size: 1.5rem; /* Adjust heading font size */
+        padding: 10px;
+    }
+
+    .card {
+        flex-direction: column; /* Stack card content vertically */
+        padding: 15px;
+        margin: 15px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .card div {
+        flex-basis: 100%; /* Full width on smaller screens */
+    }
+
+    img {
+        width: 80px; /* Resize image for better fit */
+        height: 80px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    h2 {
+        font-size: 1.2rem; /* Further reduce font size */
+        padding: 8px;
+    }
+
+    .card {
+        padding: 10px;
+        margin: 10px;
+        flex-direction: column; /* Stack for compact fit */
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+        width: 60px; /* Resize for small screens */
+        height: 60px;
+    }
+}

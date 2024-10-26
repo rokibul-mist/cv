@@ -63,3 +63,65 @@ textarea {
 .contact-details a:hover {
     text-decoration: underline;
 }
+
+/* Responsive Styling */
+
+/* Tablet */
+@media (max-width: 800px) {
+    .form-container {
+        padding: 20px;
+        margin: 20px 5%; /* Reduce margin for better fit */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .form-row {
+        flex-direction: column; /* Stack input fields vertically */
+        align-items: center;
+    }
+
+    input, textarea {
+        width: 100%; /* Full width for easier input */
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .social-icons a {
+        width: 25px;
+        height: 25px; /* Resize icons */
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .form-container {
+        padding: 15px;
+        margin: 15px 3%; /* Slightly smaller margins */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Smaller heading */
+        margin-bottom: 15px;
+    }
+
+    .form-row {
+        flex-direction: column; /* Stack inputs vertically */
+    }
+
+    input, textarea {
+        width: 100%; /* Full width for small screens */
+        font-size: 14px; /* Adjust font size */
+        padding: 6px;
+    }
+
+    .social-icons a {
+        width: 20px; /* Further reduce icon size for compact view */
+        height: 20px;
+    }
+
+    .contact-details p {
+        font-size: 0.9rem; /* Adjust text size */
+    }
+}
