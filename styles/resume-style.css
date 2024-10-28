@@ -2,13 +2,12 @@ h2{
     text-align: center;
     background: #eafff0;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 10px;
 }
 .card{
-
     margin: 20px;
     padding: 20px;
     background: #f9f9f9;
-    border-radius: 5px;
     transition: box-shadow 0.3s;
     display: flex;
     animation: slidedown .5s ease forwards;
@@ -19,7 +18,7 @@ h2{
     flex-basis: 90%;
 }
 .card img{
-    width: 100px;
+    width: 80px;
 }
 
 /* hovered card */
@@ -40,18 +39,14 @@ h2{
 
     .card {
         flex-direction: column; /* Stack card content vertically */
-        padding: 15px;
-        margin: 15px;
         align-items: center;
         text-align: center;
-    }
-    
-    .card div {
-        flex-basis: 100%; /* Full width on smaller screens */
+        margin: 10px;
     }
 
     .card img {
         width: 80px; /* Resize image for better fit */
+        margin: 5px;
     }
 }
 
@@ -63,14 +58,14 @@ h2{
     }
 
     .card {
-        padding: 10px;
-        margin: 10px;
         flex-direction: column; /* Stack for compact fit */
         align-items: center;
         text-align: center;
+        margin: 10px;
     }
 
     .card img {
         width: 60px; /* Resize for small screens */
+        margin: 5px;
     }
 }
