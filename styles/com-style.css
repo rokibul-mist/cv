@@ -1,0 +1,145 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 5px;
+}
+
+.body2 {
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slidedown .5s ease forwards;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #2a2a72;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 60px;
+}
+
+.nav a {
+  color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.nav a:hover {
+  background-color: #009ffd;
+}
+
+
+.info {
+  flex: 1;
+  padding: 20px;
+}
+
+
+footer {
+  background-color: #2a2a72;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  background-color: white;
+  padding: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons img{
+  display: block;
+  width: 30px;
+  padding: 5px;
+}
+
+/* Hover Effects */
+.social-icons a:hover{
+  background-color: #007bff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: color 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+/* Keyframe Animations */
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slidedown {
+  from {
+      color: transparent;
+      transform: translateY(-100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 800px) {
+  .nav a {
+      font-size: 0.8rem;
+      padding: 10px 20px;
+  }
+
+  .social-icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .nav {
+      flex-direction: column;
+      height: auto;
+  }
+  .nav a {
+      font-size: 0.7rem;
+      padding: 5px;
+  }
+  .body2 {
+    margin: 5px;
+  }
+
+  .button {
+      font-size: 1rem;
+  }
+  .social-icons {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin: 5px;
+  }
+}

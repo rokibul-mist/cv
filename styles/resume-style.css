@@ -1,0 +1,71 @@
+h2{
+    text-align: center;
+    background: #eafff0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+.card{
+    margin: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    transition: box-shadow 0.3s;
+    display: flex;
+    animation: slidedown .5s ease forwards;
+    border: rgb(139, 82, 160) 1px solid;
+}
+
+.card div{
+    flex-basis: 90%;
+}
+.card img{
+    width: 80px;
+}
+
+/* hovered card */
+.card:hover{
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s;
+    border: rgb(232, 170, 255) 1px solid;
+}
+
+/* Responsive Styling */
+
+/* Tablet */
+@media (max-width: 800px) {
+    h2 {
+        font-size: 1.5rem; /* Adjust heading font size */
+        padding: 10px;
+    }
+
+    .card {
+        flex-direction: column; /* Stack card content vertically */
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .card img {
+        width: 80px; /* Resize image for better fit */
+        margin: 5px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    h2 {
+        font-size: 1.2rem; /* Further reduce font size */
+        padding: 8px;
+    }
+
+    .card {
+        flex-direction: column; /* Stack for compact fit */
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .card img {
+        width: 60px; /* Resize for small screens */
+        margin: 5px;
+    }
+}
