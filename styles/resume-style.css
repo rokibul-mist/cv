@@ -9,10 +9,10 @@ h2{
     padding: 20px;
     background: #f9f9f9;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     transition: box-shadow 0.3s;
     display: flex;
     animation: slidedown .5s ease forwards;
+    border: rgb(139, 82, 160) 1px solid;
 }
 
 .card div{
@@ -20,7 +20,13 @@ h2{
 }
 .card img{
     width: 100px;
-    height: 100px;
+}
+
+/* hovered card */
+.card:hover{
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s;
+    border: rgb(232, 170, 255) 1px solid;
 }
 
 /* Responsive Styling */
@@ -46,7 +52,6 @@ h2{
 
     .card img {
         width: 80px; /* Resize image for better fit */
-        height: 80px;
     }
 }
 
@@ -67,6 +72,5 @@ h2{
 
     .card img {
         width: 60px; /* Resize for small screens */
-        height: 60px;
     }
 }
