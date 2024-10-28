@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/com-style.css">
     <link rel="stylesheet" href="styles/home-style.css">
+    <link rel="stylesheet" href="styles/slider.css">
     <title>MD Rokibul Hasan</title>
 </head>
 <body>
@@ -21,27 +22,34 @@
     <dev class="container">
         <dev class="info">
             <h1>MD. ROKIBUL HASAN</h1>
-            <p>I’m a committed Naval Architect and avid researcher, acknowledged for my flexible and dynamic approach. My education in Naval Architecture and Marine Engineering provides expertise in ship design, construction, and proficient use of software tools. I’m proud of my contributions to nationally significant maritime projects.</p>
+            <p>I’m a fresh graduate Naval Architect and avid researcher, acknowledged for my flexible and dynamic approach. My education in Naval Architecture and Marine Engineering provides expertise in ship design, construction, and proficient use of software tools.</p>
             <a class="button" href="cv.html">DOWNLOAD CV</a>
         </dev>
         <dev class="image">
             <img src="images/rhmunna.jpg" alt="profile">
-            
-
+        </dev>
+    </dev>
+    
+    <dev class="container">
+        <dev class="slider">
+            <div class="slides">
+                <img src="images/gallary/a.jpg" alt="Image 1">
+                <img src="images/gallary/b.jpg" alt="Image 2">
+                <img src="images/gallary/c.jpg" alt="Image 3">
+            </div>
+            <div class="navigation">
+                <button onclick="prevSlide()">&#10094;</button>
+                <button onclick="nextSlide()">&#10095;</button>
+            </div>
+            <div class="dots">
+                <button class="dot" onclick="currentSlide(1)"></button>
+                <button class="dot" onclick="currentSlide(2)"></button>
+                <button class="dot" onclick="currentSlide(3)"></button>
+            </div>
         </dev>
     </dev>
 
-    <dev class="">
-            <h2 style="text-align: center;">GALLARY</h2>
-        <div class="gallary">
-            <img src="images/a.jpg" alt="Image 1">
-            <img src="images/b.jpg" alt="Image 2">
-            <img src="images/c.jpg" alt="Image 3">
-            <img src="images/" alt="Image 4">
-            <img src="images/image5.jpg" alt="Image 5">
-            <img src="images/image6.jpg" alt="Image 6">
-        </div>
-    </dev>
+    <script src="script/script.js"></script>
 </section>
 
 <div class="social-icons">
