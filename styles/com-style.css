@@ -93,12 +93,14 @@ footer {
   border-radius: 10px;
   padding: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
 }
 
-.social-icons img {
+.social-icons a img{
   display: block;
   width: 30px;
-  margin-top: 10px;
+  padding: 5px;
+
 }
 
 /* Keyframe Animations */
@@ -135,12 +137,9 @@ footer {
 
   .social-icons {
     position: relative;
-    top: auto;
-    right: auto;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
-    padding: 5px;
+    margin: 10px;
   }
 }
 
@@ -167,15 +166,8 @@ footer {
   }
   .social-icons {
       position: relative;
-      top: auto;
-      right: auto;
-      margin: 0 auto;
       display: flex;
       justify-content: center;
-      padding: 5px;
-  }
-  .social-icons img {
-      width: 25px;
-      margin: 5px;
+      margin: 10px;
   }
 }

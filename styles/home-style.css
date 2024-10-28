@@ -25,7 +25,6 @@
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 0px 0px 20px 0px;   ;
 }
 
 .gallary{
@@ -62,8 +61,9 @@
     }
 
     .image {
-        width: 80%; /* Reduce image section width */
+        width: 100%; /* Reduce image section width */
         margin: 0 auto; /* Center the image on the screen */
+        padding: 0px;
     }
 
     .gallary img {
@@ -90,9 +90,10 @@
     }
 
     .image {
-        width: 80%; /* Full width for better fit */
+        width: 100%; /* Full width for better fit */
         margin: 0px auto;
         height: 100%;
+        padding: 0px;
     }
 
     .gallary {

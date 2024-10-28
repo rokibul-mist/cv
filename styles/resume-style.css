@@ -18,7 +18,7 @@ h2{
 .card div{
     flex-basis: 90%;
 }
-img{
+.card img{
     width: 100px;
     height: 100px;
 }
@@ -44,7 +44,7 @@ img{
         flex-basis: 100%; /* Full width on smaller screens */
     }
 
-    img {
+    .card img {
         width: 80px; /* Resize image for better fit */
         height: 80px;
     }
@@ -65,7 +65,7 @@ img{
         text-align: center;
     }
 
-    img {
+    .card img {
         width: 60px; /* Resize for small screens */
         height: 60px;
     }
