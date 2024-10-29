@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #f0f0f0;
   color: #333;
-  margin: 5px;
+  margin: 5px 200px;
 }
 
 .body2 {
@@ -59,8 +59,8 @@ footer {
 
 .social-icons {
   position: fixed;
-  top: 20%;
-  left: 0;
+  top: 30%;
+  left: 170px;
   background-color: white;
   padding: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -106,6 +106,9 @@ footer {
 
 /* Tablet */
 @media (max-width: 800px) {
+  body{
+    margin: 0;
+  }
   .nav a {
       font-size: 0.8rem;
       padding: 10px 20px;
@@ -116,11 +119,15 @@ footer {
     display: flex;
     justify-content: center;
     margin: 10px;
+    left: auto;
   }
 }
 
 /* Mobile */
 @media (max-width: 500px) {
+  body{
+    margin: 0;
+  }
   .nav {
       flex-direction: column;
       height: auto;
@@ -141,5 +148,6 @@ footer {
       display: flex;
       justify-content: center;
       margin: 5px;
+      left: auto;
   }
 }
