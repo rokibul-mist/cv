@@ -22,20 +22,24 @@ body {
 }
 
 .nav {
+  position: relative;
   display: flex;
+  height: auto;
   justify-content: center;
   background-color: #2a2a72;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  height: 60px;
 }
 
 .nav a {
   color: rgb(255, 255, 255);
-  padding: 15px 25px;
-  text-decoration: none;
-  font-size: 1.1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: solid;
+  font-size: 1rem;
   overflow: hidden;
+  word-wrap:inherit;
   text-align: center;
+  width: 20%;
 }
 
 .nav a:hover {
@@ -109,9 +113,15 @@ footer {
   body{
     margin: 0;
   }
+  .nav{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .nav a {
       font-size: 0.8rem;
       padding: 10px 20px;
+      text-align: center;
   }
 
   .social-icons {
@@ -128,9 +138,10 @@ footer {
   body{
     margin: 0;
   }
-  .nav {
-      flex-direction: column;
-      height: auto;
+  .nav{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .nav a {
       font-size: 0.7rem;
