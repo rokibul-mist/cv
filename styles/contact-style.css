@@ -42,13 +42,6 @@ textarea {
     text-align: center;
 }
 
-.social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-}
 
 
 .contact-details p {
@@ -88,10 +81,6 @@ textarea {
         padding: 8px;
     }
 
-    .social-icons a {
-        width: 25px;
-        height: 25px; /* Resize icons */
-    }
 }
 
 /* Mobile */
@@ -114,11 +103,6 @@ textarea {
         width: 100%; /* Full width for small screens */
         font-size: 14px; /* Adjust font size */
         padding: 6px;
-    }
-
-    .social-icons a {
-        width: 20px; /* Further reduce icon size for compact view */
-        height: 20px;
     }
 
     .contact-details p {

@@ -114,14 +114,15 @@ footer {
     margin: 0;
   }
   .nav{
-    flex-direction: column;
+    display: block;
     align-items: center;
     text-align: center;
+    padding: 20px;
   }
   .nav a {
       font-size: 0.8rem;
-      padding: 10px 20px;
       text-align: center;
+      padding: 10px;
   }
 
   .social-icons {
@@ -145,7 +146,6 @@ footer {
   }
   .nav a {
       font-size: 0.7rem;
-      padding: 5px;
   }
   .body2 {
     margin: 5px;

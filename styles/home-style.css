@@ -15,10 +15,11 @@
 .info p{
     text-align: justify;
     padding: 10px;
+    width: 70%;
 }
 button {
 padding: 10px 20px;
-margin: 10px;
+margin: 100px 10px 10px 10px;
 background-color: #009FFD;
 color: white;
 font-size: 1.2rem;
@@ -58,10 +59,14 @@ background-color: #007bff;
     }
     .info p {
         text-align: center;
+        width: 100%;
     }
 
     .image {
         
+    }
+    button{
+        margin: 10px;
     }
 }
 
@@ -84,8 +89,10 @@ background-color: #007bff;
     .info p {
         font-size: 0.9rem;
         text-align: center;
+        width: 100%;
     }
     button {
+        margin: 10px;
         font-size: 1rem;
     }
 

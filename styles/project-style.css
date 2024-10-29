@@ -1,0 +1,146 @@
+h2{
+    text-align: center;
+    background: #eafff0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+.card{
+    margin: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    transition: box-shadow 0.3s;
+    border: rgb(139, 82, 160) 1px solid;
+}
+
+.card div{
+    flex-basis: 90%;
+}
+.card img{
+    width: 50%;
+}
+
+/* hovered card */
+.card:hover{
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border: rgb(232, 170, 255) 1px solid;
+}
+
+/* Responsive Styling */
+
+/* Tablet */
+@media (max-width: 800px) {
+    h2 {
+        font-size: 1.5rem; /* Adjust heading font size */
+        padding: 10px;
+    }
+
+    .card {
+        flex-direction: column; /* Stack card content vertically */
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    h2 {
+        font-size: 1.2rem; /* Further reduce font size */
+        padding: 8px;
+    }
+
+    .card {
+        flex-direction: column; /* Stack for compact fit */
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+
+/* Slider container styling */
+
+.slider {
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    align-items: center;
+    border: #bbb 1px solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.slides img {
+    height: 2%;
+}
+
+/* Slide container styling */
+.slides {
+    display: inline-flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+/* Navigation Buttons */
+.navigation {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.navigation button {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: #353535;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0 10px;
+}
+
+.navigation button:hover {
+    background-color: rgba(169, 169, 169, 0.9);
+}
+
+
+
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .slider {
+        width: 100%; /* Adjust to full width on medium devices */
+    }
+
+    .navigation button {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .dots button {
+        padding: 4px;
+        margin: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallary{
+        margin: 5px;
+    }
+    .slider {
+        width: 100%; /* Full width for small devices */
+    }
+
+    .navigation button {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .dots button {
+        padding: 3px;
+        margin: 3px;
+    }
+}
