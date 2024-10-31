@@ -5,16 +5,18 @@ h2{
     padding: 10px;
 }
 .card{
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 5px;
     background: #f9f9f9;
     transition: box-shadow 0.3s;
     border: rgb(139, 82, 160) 1px solid;
 }
 
-.card div{
-    flex-basis: 90%;
+.info{
+    display: flex;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
+
 .card img{
     width: 50%;
 }
@@ -23,6 +25,19 @@ h2{
 .card:hover{
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border: rgb(232, 170, 255) 1px solid;
+}
+
+.button{
+    padding: 5px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.button:hover{
+    background: #0069d9;
 }
 
 /* Responsive Styling */
@@ -39,6 +54,9 @@ h2{
         align-items: center;
         text-align: center;
         margin: 10px;
+    }
+    .info{
+        display: block;
     }
 }
 
@@ -63,9 +81,8 @@ h2{
 .slider {
     position: relative;
     display: inline-flex;
-    overflow: hidden;
     align-items: center;
-    border: #bbb 1px solid;
+    overflow-x: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
