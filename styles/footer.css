@@ -1,0 +1,21 @@
+/* footer.css */
+
+.footer {
+    background-color: #1a1a1a; /* Dark footer background */
+    color: #e0e0e0; /* Light text color */
+    padding: 1rem 0; /* Padding for top and bottom */
+    text-align: center; /* Center the content */
+    margin-top: auto; /* Push the footer to the bottom */
+    border-top: 1px solid #333333; /* Top border for separation */
+}
+
+.footer-bottom {
+    font-size: 0.9rem; /* Smaller font size for copyright */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .footer-bottom {
+        font-size: 0.8rem; /* Adjust font size for mobile */
+    }
+}

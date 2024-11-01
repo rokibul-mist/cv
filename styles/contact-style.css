@@ -1,0 +1,111 @@
+.form-container {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 10%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #3a3a3a;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    height: 100px;
+}
+
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+.contact-details p {
+    margin-top: 10px;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: #3b5f56;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling */
+
+/* Tablet */
+@media (max-width: 800px) {
+    .form-container {
+        padding: 20px;
+        margin: 20px 5%; /* Reduce margin for better fit */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .form-row {
+        flex-direction: column; /* Stack input fields vertically */
+        align-items: center;
+    }
+
+    input, textarea {
+        width: 100%; /* Full width for easier input */
+        font-size: 14px;
+        padding: 8px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .form-container {
+        padding: 15px;
+        margin: 15px 3%; /* Slightly smaller margins */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Smaller heading */
+        margin-bottom: 15px;
+    }
+
+    .form-row {
+        flex-direction: column; /* Stack inputs vertically */
+    }
+
+    input, textarea {
+        width: 100%; /* Full width for small screens */
+        font-size: 14px; /* Adjust font size */
+        padding: 6px;
+    }
+
+    .contact-details p {
+        font-size: 0.9rem; /* Adjust text size */
+    }
+}
