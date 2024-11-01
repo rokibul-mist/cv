@@ -10,7 +10,6 @@ h2{
     background: #f9f9f9;
     transition: box-shadow 0.3s;
     display: flex;
-    animation: slidedown .5s ease forwards;
     border: rgb(139, 82, 160) 1px solid;
 }
 
