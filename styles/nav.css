@@ -8,7 +8,6 @@
     background: linear-gradient(90deg, #1a1a1a, #333333); /* Dark gradient background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     position: relative;
-    animation: slidedown .5s ease forwards;
 
     .nav-logo {
         img{
