@@ -20,13 +20,13 @@
         border-radius: 50%;
     }
   }
-
-  @media (max-width: 768px) {
-    .social-icons {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        margin: 5px;
-        left: auto;
-    }
+}
+@media (max-width: 768px) {
+  .social-icons {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin: 5px;
+      left: auto;
   }
+}
