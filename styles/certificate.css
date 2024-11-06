@@ -1,9 +1,23 @@
+.header{
+    text-align: center;
+    background: #3f3f3f;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 10px;
+}
 .card {
     display: flex;
     background-color: aliceblue;
     padding: 20px;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        transition: box-shadow 0.3s;
+        scale: 101%;
+        transition: scale .5s linear ;
+    }
 }
 .text{
     flex-basis: 90%;

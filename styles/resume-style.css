@@ -1,4 +1,4 @@
-h2{
+.header{
     text-align: center;
     background: #3f3f3f;
     color: #ffffff;
@@ -11,6 +11,14 @@ h2{
     padding: 20px;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slidedown;
+
+    &:hover{
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        transition: box-shadow 0.3s;
+        scale: 101%;
+        transition: scale .5s linear ;
+    }
 }
 
 .card div{
@@ -20,34 +28,8 @@ h2{
     width: 80px;
 }
 
-/* hovered card */
-.card:hover{
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    transition: box-shadow 0.3s;
-    border: rgb(232, 170, 255) 1px solid;
-}
 
-/* Responsive Styling */
 
-/* Tablet */
-@media (max-width: 800px) {
-    h2 {
-        font-size: 1.5rem; /* Adjust heading font size */
-        padding: 10px;
-    }
-
-    .card {
-        flex-direction: column; /* Stack card content vertically */
-        align-items: center;
-        text-align: center;
-        margin: 10px;
-    }
-
-    .card img {
-        width: 80px; /* Resize image for better fit */
-        margin: 5px;
-    }
-}
 
 /* Mobile */
 @media (max-width: 500px) {

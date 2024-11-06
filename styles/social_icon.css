@@ -12,12 +12,9 @@
       padding: 5px;
 
       &:hover {
-        background-color: #007bff;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        transition: color 0.3s ease;
-        transition: box-shadow 0.3s ease;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-        border-radius: 50%;
+        scale: 150%;
+        transition: transform 1s ease;
+
     }
   }
 }

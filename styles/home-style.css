@@ -16,15 +16,17 @@
     text-align: justify;
     padding: 10px;
 }
-button {
-padding: 10px 20px;
-margin: 100px 10px 10px 10px;
-background-color: #009FFD;
-color: white;
-font-size: 1.2rem;
-border: none;
-text-decoration: solid;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #1a1a1a, #333333);
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    text-decoration: solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -61,9 +63,7 @@ background-color: #007bff;
         width: 100%;
     }
 
-    .image {
-        
-    }
+
     button{
         margin: 10px;
     }
@@ -95,7 +95,4 @@ background-color: #007bff;
         font-size: 1rem;
     }
 
-    .image {
-
-    }
 }

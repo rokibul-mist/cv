@@ -12,6 +12,10 @@
     .nav-logo {
         img{
             width: 50px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 
@@ -49,6 +53,7 @@
 
             &:hover::after {
                 width: 100%;
+                
             }
         }
 
@@ -74,19 +79,8 @@
 
     }
 
-    }
     .navbar.active .nav-menu {
         display: flex;
     }
 }
 
-@keyframes slidedown {
-    from {
-        color: transparent;
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-  }
-  
