@@ -1,4 +1,4 @@
-.card{
+.card {
     display: flex;
     background-color: aliceblue;
     padding: 20px;
@@ -8,54 +8,37 @@
 .text{
     flex-basis: 90%;
 }
-
-.title{
+.title {
+    display: flex;
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 5px;
     text-decoration: solid;
     color: #000;
-
-    &:hover{
-        color: #00458B;
-        text-decoration: underline;
-    }
 }
-
-.info{
+.info {
     font-size: 14px;
     color: #555;
     margin-bottom: 15px;
-
-    a{
-        color: #555;
-        text-decoration: none;
-        &:hover{
-            color: #00458B;
-            text-decoration: underline;
-        }
-    }
 }
-
-
-.version{
-    font-size: 12px;
-    padding: 5px 10px;
-    border-radius: 1px;
-    color: #fff;
+.id {
+    background: #f0f0f0;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.link {
+    margin-top: 20px;
+}
+.link a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #5c67f2;
+    padding: 8px 16px;
+    border-radius: 5px;
     font-weight: bold;
-    background-color: #009688;
-  }
-  
-.preprint {
-    font-size: 12px;
-    padding: 5px 10px;
-    border-radius: 1px;
-    color: #fff;
-    font-weight: bold;
-    background-color: #dff84f;
-    color: #333;
-  }
+}
 
 .thumb{
     text-align: center;
@@ -64,7 +47,7 @@
     
 
     img{
-        width: 100px;
+        width: 150px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
@@ -74,8 +57,6 @@
         }
     }
 }
-
-
 
 /* Responsive Styles */
 
