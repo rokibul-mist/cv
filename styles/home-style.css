@@ -30,16 +30,15 @@
     .button {
         margin: 10px 0px;
         padding: 10px 20px;
-        background-color: #000;
-        color: white;
-        border-radius: 20px;
+        color: rgb(0, 0, 0);
         text-decoration: solid;
         transition: .3s;
-        border: 1px solid black;
+        border: 2px solid black;
+        font-weight: bolder;
     
         &:hover {
-            background-color: transparent;
-            color: #000;
+            background-color: black;
+            color: #f9f9f9;
             border: 1px solid black;
         }
     }
@@ -50,15 +49,13 @@
             display: inline-flex;
             padding: 8px;
             border: 2px solid black;
-            border-radius: 50%;
             font-size: 20px;
-            color: #ffffff;
-            background-color: #000;
+            color: rgb(0, 0, 0);
             transition: .3s;
 
             &:hover {
-                background: rgb(255, 255, 255);
-                color: rgb(0, 0, 0);
+                background:black;
+                color: white;
             }
 
         }
@@ -73,10 +70,8 @@
 
     border: 2px solid black;
     padding: 3px;
-    border-radius: 5%;
     
     .image{
-        border-radius: 5%;
         overflow: hidden;
         img{
             width: 100%;

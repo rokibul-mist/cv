@@ -1,59 +1,40 @@
 /* styles.css */
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
     background: linear-gradient(90deg, #1a1a1a, #333333);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 100;
-
-    .logo {
-        transform: translateX(50px);
-        img{
-            width: 50px;
-            transition: .5s;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-    }
+    padding: 20px 30px;
 
     .nav-menu {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         list-style: none;
     
         li {
             margin: 0 10px;
             a{
+                font: 1em sans-serif;
+                font-weight: bold;
+                color: #ffffff;
                 text-decoration: none;
-                color: white;
-                transition: .5s;
-                font-size: 17px;
-                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                transition: .5s ease-in-out;
+                text-transform: uppercase;
 
                 &:hover {
                     color: #aaff00;
-                    transform: scale(1.1);
+                    font-size: 1.3em;
                 }
             }
             
             .active{
                 color: #aaff00;
+                font-size: 1.3em;
             }
     
-        }
-    }
-    .title{
-        transform: translateX(-50px);
-        a{
-            text-decoration: solid;
-            color: white;
-            font-size: 30px;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
     }
 }
@@ -63,27 +44,12 @@
 
 /* Responsive styling for mobile view */
 @media (max-width: 768px) {
-    .navbar{
-        flex-direction: column;
-
-        .logo{
-            transform: translateX(0);
-            img{
-                margin-left: 0;
-            }
-        }
-        .title{
-            transform: translateX(0px);
-            visibility: hidden;
-        }
-    }
     .nav-menu{
-        text-align: center;
+        display: inline-flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-        li{
-            padding: 0;
-        }
     }
 
 }
