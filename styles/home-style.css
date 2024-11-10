@@ -12,7 +12,6 @@
     h1{
         font-size: 40px;
         text-align: left;
-        text-shadow: 0 5px 6px rgba(10, 10, 10, .5);
     }
     h2{
         font-size: 20px;
@@ -21,6 +20,7 @@
     p{
         text-align: justify;
         margin: 20px 0;
+        font-size: 16px;
     }
 
     .sci-btn{

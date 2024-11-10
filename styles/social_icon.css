@@ -10,10 +10,11 @@
       display: block;
       width: 30px;
       padding: 5px;
+      transition: .5s;
 
       &:hover {
         scale: 150%;
-        transition: transform 1s ease;
+        
 
     }
   }

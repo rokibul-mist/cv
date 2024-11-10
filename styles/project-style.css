@@ -10,6 +10,7 @@ h2{
     background: #f9f9f9;
     transition: box-shadow 0.3s;
     border: rgb(139, 82, 160) 1px solid;
+    transition: .5s;
 
     .info{
         padding: 20px;
