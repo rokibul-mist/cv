@@ -3,67 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/social_icon.css">
-    <link rel="stylesheet" href="styles/com-style.css">
-    <link rel="stylesheet" href="styles/project-style.css">
-    <title>MD Rokibul Hasan</title>
+    <title>Rokibul Hasan</title>
+
+    <link rel="stylesheet" href="css/projects.css">
+
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/social_icon.css">
+
 </head>
 <body>
     <nav class="navbar">
-        <ul class="nav-menu">
+        <a href="index.html" class="logo">ROKIBUL</a>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="index.html">About</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="thesis.html">Thesis</a></li>
-            <li><a href="projects.html"  class="active">Projects</a></li>
+            <li class="actives"><a href="projects.html">Projects</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="cirtificates.html">Certificates</a></li>
             <li><a href="activites.html">Activities</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <script src="js/nav.js"></script>
     </nav>
-
-<section class="body2">
-    <section>
-        <h2>PROJECTS</h2>
-        <div class="card">
-            <div class="info">
-                <div class="text">
-                    <h3>NAME 308</h3>
-                    <p>Ship Type:Ocean Going LNG Carrier </p> Capacity: 156000 m3</p>
-                    <p>Designed in RHINO 3D</p>
-                </div>
-                <button class="button" href="#">FILES</button>
-            </div>
-
-            <dev class="slider">
-                <div class="slides">
-                    <img src="images/gallary/a.jpg" alt="Image 1">
-                    <img src="images/gallary/b.jpg" alt="Image 2">
-                    <img src="images/gallary/c.jpg" alt="Image 3">
-                </div>
-                <div class="navigation">
-                    <button onclick="prevSlide()">&#10094;</button>
-                    <button onclick="nextSlide()">&#10095;</button>
-                </div>
-            </dev>
+    
+    <section class="page">
+        <div class="page_title">
+            <h1>projects</h1>
         </div>
     </section>
-</section>
-<div class="social-icons">
-    <a href="https://www.linkedin.com/in/rokibul-hasan-b30423335/"><img src="images/icon/linkedin-icon.png" alt="linkedin"></a>
-    <a href="https://www.researchgate.net/profile/Md-Rokibul-Hasan-5"><img src="images/icon/researchgate-icon.png" alt="researchgate"></a>
-    <a href="https://wa.me/+8801521798794"><img src="images/icon/whatsapp-icon.png" alt="whatsapp"></a>
-    <a href="https://github.com/rokibulhasan-munna"><img src="images/icon/git.png" alt="github"></a>
-    <a href="https://www.youtube.com/@rhmunna8166"><img src="images/icon/youtube.jpg" alt="youtube"></a>
-</div>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/rokibul-hasan-b30423335/"><img src="img/icon/linkedin-icon.png" alt="linkedin"></a>
+        <a href="https://www.researchgate.net/profile/Md-Rokibul-Hasan-5"><img src="img/icon/researchgate-icon.png" alt="researchgate"></a>
+        <a href="https://wa.me/+8801521798794"><img src="img/icon/whatsapp-icon.png" alt="whatsapp"></a>
+        <a href="https://github.com/rokibulhasan-munna"><img src="img/icon/git.png" alt="github"></a>
+        <a href="https://www.youtube.com/@rhmunna8166"><img src="img/icon/youtube.jpg" alt="youtube"></a>
+    </div>
 
-    <footer class="footer">
-        <div class="footer-bottom">
-            &copy; 2024 MD Rokibul Hasan | All rights reserved
+    <footer>
+        <div class="container">
+            <p>2024 Rokibul Hasan. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>

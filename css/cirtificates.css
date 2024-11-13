@@ -1,38 +1,34 @@
-.header{
-    text-align: center;
-    background: #3f3f3f;
-    color: #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    padding: 10px;
-}
 .card {
     display: flex;
-    background-color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(1px);
+    background-color: rgba(215, 215, 215, 0.5);
     padding: 20px;
-    margin: 10px;
+    margin: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: .5s;
 
     &:hover {
-        box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        scale: 101%;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
     }
 }
 .text{
-    flex-basis: 90%;
+    display: flex;
+    flex-direction: column;
 }
 .title {
-    display: flex;
     font-weight: bold;
     font-size: 1.5rem;
-    margin-bottom: 5px;
     text-decoration: solid;
     color: #000;
+    margin: 0;
 }
 .info {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000;
+
 }
 .id {
     background: #f0f0f0;

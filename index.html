@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/social_icon.css">
-    <link rel="stylesheet" href="styles/com-style.css">
-    <link rel="stylesheet" href="styles/home-style.css">
-    <link rel="stylesheet" href="styles/slider.css">
-    <title>MD Rokibul Hasan</title>
-</head>
+    <title>Rokibul Hasan</title>
 
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
 <body>
     <nav class="navbar">
-        <ul class="nav-menu">
-            <li><a href="index.html"  class="active">About</a></li>
+        <a href="index.html" class="logo">ROKIBUL</a>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <ul class="nav-links" id="nav-links">
+            <li  class="actives"><a href="index.html">About</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="thesis.html">Thesis</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -27,65 +27,50 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
-    <section class="body2">
-        <dev class="about">
-            <dev class="info">
-                <h1>MD. ROKIBUL HASAN</h1>
-                <h2>Naval Architect</h2>
-                <p>I’m a fresh graduate Naval Architect and avid researcher, acknowledged for my flexible and dynamic
-                    approach. My education in Naval Architecture and Marine Engineering provides expertise in ship
-                    design, construction, and proficient use of software tools.</p>
-
-                <div class="sci-btn">
-                    <a class="button" href="">DOWNLOAD CV <i class='bx bxs-download'></i></a>
-                    <div class="sci">
-                        <a href="https://www.linkedin.com/in/md-rokibul-hasan-b30423335/" class="btn"><i class='bx bxl-linkedin' ></i></a>
-                        <a href="https://wa.me/+8801521798794" class="btn"><i class='bx bxl-whatsapp' ></i></a>
-                        <a href="https://www.youtube.com/@rhmunna8166" class="btn"><i class='bx bxl-youtube' ></i></a>
-                        <a href="https://x.com/Rokibul_MIST" class="btn"><i class='bx bxl-twitter'></i></a>
-                    </div>
+    <script src="js/nav.js"></script>
+    <section class="page1">
+        <div class="container">
+            <h1>MD. ROKIBUL HASAN</h1>
+            <h2>Naval Architecture</h2>
+            <p>Rokibul Hasan is a renowned naval architect from Bangladesh. He has been involved in the construction and design of various naval ships over the years. His passion for maritime engineering and design has led him to become a leading figure in the field.</p>
+            <div class="sci-btn">
+                <a href="" class="btn">DOWNLOAD CV <i class='bx bxs-download'></i></a>
+                <div class="sci">
+                    <a href="https://www.linkedin.com/in/md-rokibul-hasan-b30423335/" class="btn"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://wa.me/+8801521798794" class="btn"><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="https://www.youtube.com/@rhmunna8166" class="btn"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://x.com/Rokibul_MIST" class="btn"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.facebook.com/rh.munna99/" class="btn"><i class='bx bxl-facebook'></i></a>
                 </div>
+            </div>
+        </div>
+        <div class="img_container">
+            <img src="img/rhmunna.jpg" alt="">
+        </div>
+    </section>
+    <section class="page2">
+        <div class="card">
+            <h2>HOBBY</h2>
+            <p>Rokibul has always been fascinated by maritime engineering and design. He loves experimenting with various types of ships and structures, and has worked on various naval projects around the world.</p>
+        </div>
+        <div class="card">
+            <h2>HOBBY</h2>
+            <p>Rokibul has always been fascinated by maritime engineering and design. He loves experimenting with various types of ships and structures, and has worked on various naval projects around the world.</p>
+        </div>
+        <div class="card">
+            <h2>HOBBY</h2>
+            <p>Rokibul has always been fascinated by maritime engineering and design. He loves experimenting with various types of ships and structures, and has worked on various naval projects around the world.</p>
+        </div>
 
-    
-            </dev>
-            <dev class="image_border">
-                <div class="image">
-                    <img src="images/rhmunna.jpg" alt="profile">
-                </div>
-            </dev>
-        </dev>
-
-        <dev class="gallary">
-            <dev class="slider">
-                <div class="slides">
-                    <img src="images/gallary/a.jpg" alt="Image 1">
-                    <img src="images/gallary/b.jpg" alt="Image 2">
-                    <img src="images/gallary/c.jpg" alt="Image 3">
-                </div>
-                <div class="navigation">
-                    <button onclick="prevSlide()">&#10094;</button>
-                    <button onclick="nextSlide()">&#10095;</button>
-                </div>
-                <div class="dots">
-                    <button class="dot" onclick="currentSlide(1)"></button>
-                    <button class="dot" onclick="currentSlide(2)"></button>
-                    <button class="dot" onclick="currentSlide(3)"></button>
-                </div>
-            </dev>
-        </dev>
-
-        <script src="script/script.js"></script>
     </section>
 
+    <section class="page3">
 
-
-    <footer class="footer">
-        <div class="footer-bottom">
-            &copy; 2024 MD Rokibul Hasan | All rights reserved
+    </section>
+    <footer>
+        <div class="container">
+            <p>2024 Rokibul Hasan. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
-
 </html>

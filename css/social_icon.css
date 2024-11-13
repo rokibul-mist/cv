@@ -1,0 +1,32 @@
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 30%;
+  left: 100px;
+  background-image:  radial-gradient(#000000 0.5px, transparent 0.5px), radial-gradient(#a7a7a7 0.5px, #ffffff 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
+  padding: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  img{
+    display: block;
+    width: 25px;
+    padding: 5px;
+    transition: .5s;
+
+    &:hover {
+      scale: 150%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .social-icons {
+    flex-direction: row;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: auto;
+  }
+}
