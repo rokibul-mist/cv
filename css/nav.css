@@ -13,16 +13,13 @@
     margin-top: 0;
 }
 
-.navbar .logo {
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
+.logo {
     margin-left: 50px;
+    width: 50px;
     transition: .5s ease-in-out;
 
     &:hover {
-        color: #aaff00;
+        transform: scale(1.1);
     }
 }
 
