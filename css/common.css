@@ -35,6 +35,7 @@ body {
             text-align: center;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
             letter-spacing: 15px;
+            overflow: hidden;
         }
     }
 }
@@ -42,6 +43,13 @@ body {
 @media (max-width: 768px) {
     .page{
         margin: 0;
+        .page_title{
+            height: 120px;
+            h1{
+                font-size: 20px;
+                letter-spacing: 3px;
+            }
+        }
     }
 
 }
