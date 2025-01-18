@@ -1,0 +1,40 @@
+
+/* Slideshow Container */
+.slideshow-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Slide Images */
+.slides {
+  position: absolute;
+  height: 200px;
+  left: 100%; /* Start outside of the container */
+  opacity: 0; /* Hidden by default */
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.slides img {
+  width: 100%;
+}
+
+/* Show the current slide */
+.slides.active {
+  transform: translateX(0%); /* Slide into view */
+  left: 0;
+  opacity: 1;
+  z-index: 0;
+}
+
+.slides.previous {
+  transform: translateX(100%); /* Hold previous slide in place */
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+}
+
+/* Animation */
+.slides.next {
+  transform: translateX(-100%); /* Slide out of view */
+  opacity: 0;
+}
