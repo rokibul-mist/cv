@@ -23,7 +23,7 @@ function createSlideshow(slideshowId) {
         slides[nextIndex].classList.add('next');
 
         // Change slide every 4 seconds
-        setTimeout(showSlides, 4000);
+        setTimeout(showSlides, 2000);
     }
 
     // Initialize the slideshow
@@ -32,5 +32,4 @@ function createSlideshow(slideshowId) {
 
 // Initialize multiple slideshows
 createSlideshow('slideshow1');
-createSlideshow('slideshow2');
-createSlideshow('slideshow3');
+
