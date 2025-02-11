@@ -134,27 +134,6 @@
     }
 }
 
-.page3{
-    background-image:  radial-gradient(#000000 0.5px, transparent 0.5px), radial-gradient(#a7a7a7 0.5px, #000000 0.5px);
-    height: 100vh;
-    animation: faded  2s ease-in-out;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-
-    .title{
-        color: #ffffff;
-        font-size: 36px;
-        position: absolute;
-    }
-
-    .container{
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-}
-
 
 @media (max-width: 768px) {
     .page1 {

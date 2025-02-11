@@ -34,3 +34,6 @@ function createSlideshow(slideshowId) {
 createSlideshow('slideshow1');
 createSlideshow('slideshow2');
 createSlideshow('slideshow3');
+createSlideshow('slideshow4');
+createSlideshow('slideshow5');
+createSlideshow('slideshow6');
