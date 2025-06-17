@@ -1,6 +1,7 @@
 .cards_container{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .header{
     text-align: center;
@@ -12,12 +13,13 @@
 }
 .card {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     backdrop-filter: blur(1px);
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
-    height: 230px;
+    height: 500px;
     padding: 0px 10px;
     margin: 10px 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -28,33 +30,25 @@
         box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
     }
 }
-.title {
-    font-weight: bold;
-    font-size: 1.3rem;
-    text-decoration: solid;
-    width: 100%;
-    text-align: center;
-    background: #1b1b1b;
-    color: #ffffff;
-    padding: 10px;
-}
+
 
 .slidebox{
     overflow: hidden;
 }
 
-.files{
-    position: relative;
-    top: 30%;
-}
 .btn{
-    padding: 10px;
-    background-color: rgb(0, 0, 0);
-    opacity: 70%;
-    color: aliceblue;
-    text-decoration: solid;
-    border-radius: 10px;
 
+}
+.info{
+    width: 100%;
+    color: #000;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
 }
 
 /* Responsive Styles */
